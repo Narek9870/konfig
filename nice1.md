@@ -3,7 +3,7 @@
 
 Код
 grep '.*' /etc/passwd | cut -d: -f1 | sort
-xartd0@xartd0-Strix-GL504GW-GL504GW:~$ grep '.*' /etc/passwd | cut -d: -f1 | sort
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~$ grep '.*' /etc/passwd | cut -d: -f1 | sort
 _apt
 avahi
 backup
@@ -54,7 +54,7 @@ uucp
 uuidd
 whoopsie
 www-data
-xartd0
+narek_tashit
 Задача 2
 Вывести данные /etc/protocols в отформатированном и отсортированном порядке для 5 наибольших портов, как показано в примере ниже:
 
@@ -82,7 +82,7 @@ done
 echo "+${line}+"
 echo "| ${text} |"
 echo "+${line}+"
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./banner.sh "xartd0"
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./banner.sh "narek_tashit"
 +------------+
 |narek_tashit |
 +------------+
@@ -95,7 +95,7 @@ xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./banner.sh "xartd0"
 file="$1"
 
 id=$(grep -o -E '\b[a-zA-Z]*\b' "$file" | sort -u)
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | grep -vE '\b(int|void|return|if|else|for|while|include|stdio)\b' | sort | uniq
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | grep -vE '\b(int|void|return|if|else|for|while|include|stdio)\b' | sort | uniq
 h
 hello
 main
@@ -115,8 +115,8 @@ chmod 755 "./$file"
 sudo cp "$file" /usr/local/bin/
 Например, пусть программа называется reg:
 
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./reg.sh banner.sh
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ls /usr/local/bin
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./reg.sh banner.sh
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ls /usr/local/bin
 banner.sh  ngrok
 Задача 6
 Написать программу для проверки наличия комментария в первой строке файлов с расширением c, js и py.
@@ -144,7 +144,7 @@ for file in $(find . -type f \( -name "*.c" -o -name "*.js" -o -name "*.py" \));
         fi
     fi
 done
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh 
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh 
 Файл ./test.js содержит комментарий в первой строке.
 Файл ./test.c содержит комментарий в первой строке.
 Файл ./test.py не содержит комментарий в первой строке.
@@ -173,7 +173,7 @@ fi
 
 # Удаляем временный файл
 rm "$temp_file"
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh .
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh .
 Найдены дубликаты файлов:
 553844d44cf63d240f17403dd8b6ff5074efcfd3d783fcd9ebd60e522124d4a6  ./test.js
 553844d44cf63d240f17403dd8b6ff5074efcfd3d783fcd9ebd60e522124d4a6  ./test (Copy).js
@@ -206,7 +206,7 @@ find "$directory" -type f -name "*.$extension" -print0 | tar -cvf "$archive_name
 echo "Архив создан: $archive_name"
 Написать программу, которая находит все файлы в данном каталоге с расширением, указанным в качестве аргумента и архивирует все эти файлы в архив tar.
 
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./tar.sh "test" "py"
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./tar.sh "test" "py"
 tar: -: file name read contains nul character
 test/1.py
 test/2.py
@@ -230,7 +230,7 @@ output_file=$2
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в файл $output_file."
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh test.c test_new.c
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh test.c test_new.c
 Замена завершена. Результат сохранен в файл test_new.c.
 Изначальный файл
 
@@ -260,7 +260,7 @@ directory=$1
 
 # Поиск пустых текстовых файлов
 find "$directory" -type f -empty -print
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./10.sh test
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./10.sh test
 test/3.js
 test/1.py
 test/1ff
@@ -269,7 +269,7 @@ test/2.pyЗадача 1
 
 Код
 grep '.*' /etc/passwd | cut -d: -f1 | sort
-xartd0@xartd0-Strix-GL504GW-GL504GW:~$ grep '.*' /etc/passwd | cut -d: -f1 | sort
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~$ grep '.*' /etc/passwd | cut -d: -f1 | sort
 _apt
 avahi
 backup
@@ -320,7 +320,7 @@ uucp
 uuidd
 whoopsie
 www-data
-xartd0
+narek_tashit
 Задача 2
 Вывести данные /etc/protocols в отформатированном и отсортированном порядке для 5 наибольших портов, как показано в примере ниже:
 
@@ -348,7 +348,7 @@ done
 echo "+${line}+"
 echo "| ${text} |"
 echo "+${line}+"
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./banner.sh "xartd0"
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./banner.sh "narek_tashit"
 +-----------+
 |narek_tashit|
 +-----------+
@@ -361,7 +361,7 @@ xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./banner.sh "xartd0"
 file="$1"
 
 id=$(grep -o -E '\b[a-zA-Z]*\b' "$file" | sort -u)
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | grep -vE '\b(int|void|return|if|else|for|while|include|stdio)\b' | sort | uniq
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | grep -vE '\b(int|void|return|if|else|for|while|include|stdio)\b' | sort | uniq
 h
 hello
 main
@@ -381,8 +381,8 @@ chmod 755 "./$file"
 sudo cp "$file" /usr/local/bin/
 Например, пусть программа называется reg:
 
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./reg.sh banner.sh
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ls /usr/local/bin
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./reg.sh banner.sh
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ls /usr/local/bin
 banner.sh  ngrok
 Задача 6
 Написать программу для проверки наличия комментария в первой строке файлов с расширением c, js и py.
@@ -410,7 +410,7 @@ for file in $(find . -type f \( -name "*.c" -o -name "*.js" -o -name "*.py" \));
         fi
     fi
 done
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh 
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh 
 Файл ./test.js содержит комментарий в первой строке.
 Файл ./test.c содержит комментарий в первой строке.
 Файл ./test.py не содержит комментарий в первой строке.
@@ -439,7 +439,7 @@ fi
 
 # Удаляем временный файл
 rm "$temp_file"
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh .
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh .
 Найдены дубликаты файлов:
 553844d44cf63d240f17403dd8b6ff5074efcfd3d783fcd9ebd60e522124d4a6  ./test.js
 553844d44cf63d240f17403dd8b6ff5074efcfd3d783fcd9ebd60e522124d4a6  ./test (Copy).js
@@ -472,7 +472,7 @@ find "$directory" -type f -name "*.$extension" -print0 | tar -cvf "$archive_name
 echo "Архив создан: $archive_name"
 Написать программу, которая находит все файлы в данном каталоге с расширением, указанным в качестве аргумента и архивирует все эти файлы в архив tar.
 
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./tar.sh "test" "py"
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./tar.sh "test" "py"
 tar: -: file name read contains nul character
 test/1.py
 test/2.py
@@ -496,7 +496,7 @@ output_file=$2
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в файл $output_file."
-xartd0@xartd0-System-Product-Name:~/Desktop/confupr$ ./6.sh test.c test_new.c
+narek_tashit@narek_tashit-System-Product-Name:~/Desktop/confupr$ ./6.sh test.c test_new.c
 Замена завершена. Результат сохранен в файл test_new.c.
 Изначальный файл
 
@@ -526,7 +526,7 @@ directory=$1
 
 # Поиск пустых текстовых файлов
 find "$directory" -type f -empty -print
-xartd0@xartd0-Strix-GL504GW-GL504GW:~/dz1 ./10.sh test
+narek_tashit@narek_tashit-Strix-GL504GW-GL504GW:~/nice1 ./10.sh test
 test/3.js
 test/1.py
 test/1ff
