@@ -1,8 +1,7 @@
 ## Задача 1
 Вывести служебную информацию о пакете matplotlib (Python). Разобрать основные элементы содержимого файла со служебной информацией из пакета. Как получить пакет без менеджера пакетов, прямо из репозитория?
-Bash
-
-(venv) C:\Users\Narek\OneDrive\Рабочий стол\konfa\task_2>pip3 show matplotlib
+```bash
+(venv) C:\Users\Narek\OneDrive\Рабочий стол\confa\task_2>pip3 show matplotlib
 Name: matplotlib
 Version: 3.9.2
 Summary: Python plotting package
@@ -11,20 +10,20 @@ Author: John D. Hunter, Michael Droettboom
 Author-email: Unknown <matplotlib-users@python.org>
 License: License agreement for matplotlib versions 1.3.0 and later
 =========================================================
-Location: C:\Users\Narek\OneDrive\Рабочий стол\konfa\task_2\venv\Lib\site-packages
+Location: C:\Users\Narek\OneDrive\Рабочий стол\confa\task_2\venv\Lib\site-packages
 Requires: contourpy, cycler, fonttools, kiwisolver, numpy, packaging, pillow, pyparsing, python-dateutil
 Required-by:
+```
 Установка без pip, тоже самое надо сделать со всеми зависимостями
-Bash
-
+```bash
 pip install git+https://github.com/matplotlib/matplotlib.git
 cd matplotlib
 python setup.py install
+```
 
 ## Задача 2
 Вывести служебную информацию о пакете express (JavaScript). Разобрать основные элементы содержимого файла со служебной информацией из пакета. Как получить пакет без менеджера пакетов, прямо из репозитория?
-Bash
-
+```bash
 >npm show express
 
 express@4.21.0 | MIT | deps: 31 | versions: 279
@@ -61,23 +60,23 @@ dist-tags:
 latest: 4.21.0  next: 5.0.0
 
 published a week ago by wesleytodd <wes@wesleytodd.com>
+```
 Установка без npm
-Bash
-
+```bash
 git clone https://github.com/expressjs/express.git
 cd express
+```
 
 ## Задача 3
 Сформировать graphviz-код и получить изображения зависимостей matplotlib и express.
-Bash
-
+```bash
 pipdeptree --packages matplotlib --graph-output dot > matplotlib_deps.dot
-![Screenshot from 2024-10-11 00-47-20](https://github.com/user-attachments/assets/86cd990a-3a3a-4690-b0e5-233b1df560bd)
+```
+![Screenshot from 2024-10-11 00-40-20](https://github.com/user-attachments/assets/86cd990a-3a3a-4690-b0e5-233b1df560bd)
 
 ## Задача 4
 Решить на MiniZinc задачу о счастливых билетах. Добавить ограничение на то, что все цифры билета должны быть различными (подсказка: используйте all_different). Найти минимальное решение для суммы 3 цифр.
-Bash
-
+```bash
 include "globals.mzn";  % Подключение библиотеки глобальных ограничений
 % Модель для задачи о счастливых билетах с уникальными цифрами
 
@@ -99,4 +98,6 @@ solve minimize sum_digits;
 output [
   "Билет: \(show(digits[1]))\(show(digits[2]))\(show(digits[3]))\(show(digits[4]))\(show(digits[5]))\(show(digits[6]))\n",
   "Сумма цифр: \(sum_digits)\n"
+];
+```
 ];
