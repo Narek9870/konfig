@@ -1,8 +1,8 @@
 ## Клонирование репозитория
 Склонируйте репозиторий с исходным кодом и тестами:
 ```bash
-git clone https://github.com/dima5778/konfig2
-cd konfig2
+git clone https://github.com/Narek9870/konfig
+cd konfig
 ```
 
 ## Запуск
