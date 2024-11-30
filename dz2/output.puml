@@ -1,0 +1,16 @@
+@startuml
+class acl {}
+class "gcc-10-base" {}
+class libacl1 {}
+class libc6 {}
+class libcrypt1 {}
+class "libgcc-s1" {}
+acl --> libacl1
+acl --> libc6
+libacl1 --> libc6
+libc6 --> libcrypt1
+libc6 --> "libgcc-s1"
+"libgcc-s1" --> "gcc-10-base"
+"libgcc-s1" --> libc6
+libcrypt1 --> libc6
+@enduml
